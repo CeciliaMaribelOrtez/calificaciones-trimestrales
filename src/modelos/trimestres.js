@@ -96,7 +96,7 @@ export const crearTabla = (dataSet) => {
                     })
                         .then(async (willDelete) => {
                             if (willDelete) {
-                                await eliminarNota(id);
+                                await eliminarTrimestre(id);
                                 swal("Eliminado!", "El trimestre se ha borrado!", "success");
                             }
                         });
